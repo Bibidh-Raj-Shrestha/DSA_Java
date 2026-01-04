@@ -54,7 +54,7 @@ class DLL{
 	public void deleteFirst()
 	{
 		if(first == null)
-			System.out.println("Empty linked list");
+			System.out.println("\nEmpty linked list.\n");
 		else if(first==last)
 		{
 			first = null;
@@ -70,7 +70,7 @@ class DLL{
 	public void deleteLast()
 	{
 		if(first == null) {
-			System.out.println("Empty linked list");
+			System.out.println("\nEmpty linked list.\n");
 		} else if(first == last) {
 			first = last = null;
 		} else {
@@ -83,11 +83,11 @@ class DLL{
 	//display
 	public void display() {
 		if(first == null) {
-			System.out.println("Empty linked list");
+			System.out.println("\nEmpty linked list.\n");
 			return;
 		}
 
-		System.out.print("Forward: ");
+		System.out.print("\nForward: ");
 		Node temp = first;
 		while(temp != null) {
 			System.out.print(temp.value + " ");
@@ -100,7 +100,7 @@ class DLL{
 			System.out.print(temp.value + " ");
 			temp = temp.prev;
 		}
-		System.out.println();
+		System.out.println("\n");
 	}
 
 }

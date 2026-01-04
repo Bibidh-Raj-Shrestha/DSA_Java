@@ -52,7 +52,7 @@ class SLL{
 	// insert at n
 	public void addNodeAtN(int item,int n){
 		if(n <= 0) {
-			System.out.println("Invalid position.");
+			System.out.println("\nInvalid position.\n");
 			return;
 		}
 		if(n == 1){
@@ -62,7 +62,7 @@ class SLL{
 		Node temp = first;
 		for(int i = 1; i < n-1; i++){
 			if(temp == null){
-				System.out.println("Position out of range.");
+				System.out.println("\nPosition out of range.\n");
 				return;
 			}
 			temp = temp.next;
@@ -79,7 +79,7 @@ class SLL{
 	public void delNodeAtFirst()
 	{
 		if(first==null)
-			System.out.println("LinkedList is Empty.");
+			System.out.println("\nLinkedList is Empty.\n");
 		else if(first==last)
 		{
 			first = null;
@@ -94,7 +94,7 @@ class SLL{
 	public void delNodeAtLast()
 	{
 		if(first==null){
-			System.out.println("LinkedList is Empty.");
+			System.out.println("\nLinkedList is Empty.\n");
 		}
 		else if(first==last)
 		{
@@ -115,11 +115,11 @@ class SLL{
 	//deletion at n
 	public void delNodeAtN(int n){
 		if(first == null){
-			System.out.println("LinkedList is Empty.");
+			System.out.println("\nLinkedList is Empty.\n");
 			return;
 		}
 		if(n <= 0){
-			System.out.println("Invalid position.");
+			System.out.println("\nInvalid position.\n");
 			return;
 		}
 		if(n == 1){
@@ -129,13 +129,13 @@ class SLL{
 		Node temp = first;
 		for(int i = 1; i < n-1; i++){
 			if(temp.next == null){
-				System.out.println("Position out of range.");
+				System.out.println("\nPosition out of range.\n");
 				return;
 			}
 			temp = temp.next;
 		}
 		if(temp.next == null){
-			System.out.println("Position out of range.");
+			System.out.println("\nPosition out of range.\n");
 			return;
 		}
 		temp.next = temp.next.next;
@@ -148,7 +148,7 @@ class SLL{
 	public void search(int value)
 	{
 		if(first==null)
-			System.out.println("Empty linked list");
+			System.out.println("\nEmpty linked list.\n");
 		else
 		{
 			boolean flag = false;
@@ -158,7 +158,7 @@ class SLL{
 			{
 				if(temp.data == value)
 				{
-					System.out.println("Your item was found at position: "+pos);
+					System.out.println("\Your item was found at position: "+pos+"\n");
 					flag = true;
 					break;
 				}
@@ -166,7 +166,7 @@ class SLL{
 				pos++;
 			}
 			if(!flag)
-				System.out.println("Your item doesn't exist in the linked list");
+				System.out.println("\nYour item doesn't exist in the linked list\n");
 		}
 	}
 	
@@ -174,10 +174,10 @@ class SLL{
 	public void display()
 	{
 		if(first==null)
-			System.out.println("Linked List is empty.");
+			System.out.println("\nLinked List is empty.\n");
 		else
 		{
-			System.out.println("Singly Linked List Nodes:\n");
+			System.out.println("\nSingly Linked List Nodes:\n");
 			Node node = first;
 			
 			while(node!=null)

@@ -60,7 +60,7 @@ public class CDLL{
 	public void deleteFirst(){
 		if(first==null)
 		{
-			System.out.println("Empty Linked list");
+			System.out.println("\nEmpty Linked list\n");
 		}
 		else if(first == last)
 		{
@@ -77,7 +77,7 @@ public class CDLL{
 	public void deleteLast(){
 		if(first==null)
 		{
-			System.out.println("Empty Linked list");
+			System.out.println("\nEmpty Linked list\n");
 		}
 		else if(first == last)
 		{
@@ -94,11 +94,11 @@ public class CDLL{
 	public void display() 
 	{
 		if(first == null) {
-			System.out.println("Empty linked list");
+			System.out.println("\nEmpty linked list\n");
 			return;
 		}
 		
-		System.out.println("Existing Circular linked list:");
+		System.out.println("\nExisting Circular linked list:");
 		//traversing from first(using next)
 		System.out.println("Forward: ");
 		Node temp = first;
@@ -119,6 +119,6 @@ public class CDLL{
 			temp = temp.prev;
 		}while(temp != last);
 		System.out.println("(Last)");
-		System.out.println();
+		System.out.println("\n");
 	}
 }

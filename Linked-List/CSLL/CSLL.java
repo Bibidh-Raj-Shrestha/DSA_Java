@@ -57,7 +57,7 @@ class CSLL{
 	public void delNodeAtFirst()
 	{
 		if(first==null)
-			System.out.println("LinkedList is Empty.");
+			System.out.println("\nLinkedList is Empty.\n");
 		else if(first==last)
 		{
 			first = null;
@@ -73,7 +73,7 @@ class CSLL{
 	public void delNodeAtLast()
 	{
 		if(first==null)
-			System.out.println("LinkedList is Empty.");
+			System.out.println("\nLinkedList is Empty.\n");
 		else if(first==last)
 		{
 			first = null;
@@ -91,10 +91,10 @@ class CSLL{
 	public void display()
 	{
 		if(first==null)
-			System.out.println("Linked List is empty.");
+			System.out.println("\nLinked List is empty.\n");
 		else
 		{
-			System.out.println("Circular Singly Linked List Nodes:\n");
+			System.out.println("\nCircular Singly Linked List Nodes:\n");
 			Node node = first;
 			
 			do
@@ -102,7 +102,7 @@ class CSLL{
 				System.out.print(node.data+" -> ");
 				node = node.next;
 			}while(node!=first);
-			System.out.println("(back to first)");
+			System.out.println("(back to first)\n");
 		}		
 	}
 	
